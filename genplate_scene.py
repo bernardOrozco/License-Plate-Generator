@@ -15,7 +15,7 @@ from math import *
 
 from PlateCommon import *
 
-TEMPLATE_IMAGE = "./images/template.bmp"
+TEMPLATE_IMAGE = "./images/nl_template.bmp"
 # 这里假设车牌最小的检测尺寸是65*21，检测车牌的最小图像为65*21，车牌宽高比变化范围是(1.5, 4.0)
 PLATE_SIZE_MIN = (65, 21)
 

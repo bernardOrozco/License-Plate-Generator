@@ -137,9 +137,9 @@ def AddNoiseSingleChannel(single):
 
 
 def addNoise(img, sdev=0.5, avg=10):
-    img[:, :, 0] = AddNoiseSingleChannel(img[:, :, 0]);
-    img[:, :, 1] = AddNoiseSingleChannel(img[:, :, 1]);
-    img[:, :, 2] = AddNoiseSingleChannel(img[:, :, 2]);
+    img[:, :, 0] = AddNoiseSingleChannel(img[:, :, 0])
+    img[:, :, 1] = AddNoiseSingleChannel(img[:, :, 1])
+    img[:, :, 2] = AddNoiseSingleChannel(img[:, :, 2])
     return img
 
 
@@ -149,7 +149,7 @@ class GenPlate:
         self.fontC = ImageFont.truetype(fontCh, 43, 0)
         self.fontE = ImageFont.truetype(fontEng, 60, 0)
         self.img = np.array(Image.new("RGB", (226, 70), (255, 255, 255)))
-        self.bg = cv2.resize(cv2.imread("./images/template.bmp"), (226, 70))
+        self.bg = cv2.resize(cv2.imread("./images/nl_template.bmp"), (226, 70))
         self.smu = cv2.imread("./images/smu2.jpg")
         self.noplates_path = []
         for parent, parent_folder, filenames in os.walk(NoPlates):
