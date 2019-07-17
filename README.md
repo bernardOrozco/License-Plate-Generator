@@ -1,4 +1,4 @@
-# hyperlpr-train-e2e
+# License-Plate-Generator
 
 A simple code for creating licence plate images for licence plate decoder and licenc plate detection
 
